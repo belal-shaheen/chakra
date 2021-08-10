@@ -21,8 +21,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import React from "react";
 
-export default function Menu({ children }) {
+const Menu: React.FC = ({ children }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -91,7 +92,7 @@ export default function Menu({ children }) {
       </Collapse>
     </Box>
   );
-}
+};
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
@@ -293,3 +294,5 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "#",
   },
 ];
+
+export default Menu;
