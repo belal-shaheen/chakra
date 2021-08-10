@@ -1,19 +1,19 @@
-import Page from "../Page";
 import {
-  Container,
-  Stack,
-  Flex,
   Box,
-  Heading,
-  Text,
   Button,
-  Image,
+  Container,
+  createIcon,
+  Flex,
+  Heading,
   Icon,
   IconButton,
-  createIcon,
   IconProps,
+  Image,
+  Stack,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Page from "../Page";
 
 export default function Home() {
   return (

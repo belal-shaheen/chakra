@@ -1,15 +1,8 @@
 import React, { lazy } from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import history from "./routerHistory";
-import {
-  Switch,
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-} from "react-router-dom";
-import SuspenseWithChunkError from "./components/SuspenseWithChuckError";
 import Menu from "./components/Menu";
+import SuspenseWithChunkError from "./components/SuspenseWithChuckError";
 
 const Home = lazy(() => import("./views/Home"));
 
